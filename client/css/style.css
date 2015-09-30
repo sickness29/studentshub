@@ -96,7 +96,8 @@ body {
   clear: both;
   line-height: 20px;
   color: #bbb;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 .load-more {
   display: block;
@@ -160,4 +161,8 @@ body {
   clear: both;
   margin-bottom: 5px;
   pointer-events: auto;
+}
+#login-dropdown-list .dropdown-menu {
+  left: auto;
+  right: 0;
 }

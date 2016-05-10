@@ -1,0 +1,34 @@
+<template name="signInUp">
+  <h3 class="text-center text-primary">{{_ "login_page_title"}}</h3>
+  <h4 class="text-center">{{_ "sign_in_pre"}}</h4>
+  <div class="row">
+    <form class="sign-in-form col s12 m10 l8">
+      {{> input type='email' name='email'}}
+      {{> input type='password' name='password'}}
+      <button type="submit" class="btn btn-default">{{_ "sign_in"}}</button>
+    </form>
+  </div>
+  <h4 class="text-center">{{_ "sign_up_pre"}}</h4>
+  <div class="row">
+    <form class="sign-up-form col s12 m10 l8">
+      {{> input type='text' name='first_name'}}
+      {{> input type='text' name='last_name'}}
+      {{> input type='email' name='email'}}
+      <div class="input-field s12 col">
+        <input type="date" class="validate datepicker" name="birthday" id="birthday" />
+        <label for="birthday">{{_ "birthday"}}</label>
+      </div>
+      <p>
+        <input name="gender" type="radio" id="gender-1" value="male" />
+        <label for="gender-1">{{_ "male"}}</label>
+      </p>
+      <p>
+        <input name="gender" type="radio" id="gender-2" value="female" />
+        <label for="gender-2">{{_ "female"}}</label>
+      </p>
+      {{> input type='password' name='password'}}
+      {{> input type='password' name='password2'}}
+      <button type="submit" class="btn btn-default">{{_ "sign_up"}}</button>
+    </form>
+  </div>
+</template>

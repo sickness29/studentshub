@@ -9,9 +9,6 @@ jquery
 iron:router
 sacha:spin
 accounts-password
-ian:accounts-ui-bootstrap-3
-twbs:bootstrap
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -25,3 +22,15 @@ ejson
 spacebars
 check
 audit-argument-checks
+accounts-ui
+alanning:roles
+tap:i18n
+less
+nemo64:bootstrap
+materialize:materialize
+fourseven:scss
+aldeed:simple-schema
+aldeed:collection2
+standard-minifier-css
+standard-minifier-js
+aldeed:autoform

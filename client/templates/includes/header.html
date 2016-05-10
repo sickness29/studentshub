@@ -1,0 +1,32 @@
+<template name="header">
+  <div id="header" class="row clearfix">
+    <div class="names col s12">
+      <a href="/">
+        <h3 class="site-name">Students<span>Hub</span></h3>
+      </a>
+      <h5 class="slogan">{{_ "slogan"}}</h5>
+    </div>
+    <div class="fixed-action-btn horizontal main-menu">
+      <a class="btn-floating btn-large blue">
+        <i class="large mdi-navigation-menu"></i>
+      </a>
+      <ul>
+        {{#if currentUser}}
+          <li><a class="btn-floating blue" href="{{pathFor 'postAdd'}}" title="{{_ "add_post"}}">
+            <i class="material-icons">note_add</i>
+          </a></li>
+          <li><a class="btn-floating blue" href="{{pathFor 'profile' _id=currentUser._id}}" title="{{_ "profile"}}">
+            <i class="material-icons">perm_identity</i>
+          </a></li>
+          <li><a class="btn-floating blue" href="{{pathFor 'signOut'}}" title="{{_ "sign_out"}}">
+            <i class="material-icons">open_in_new</i>
+          </a></li>
+        {{else}}
+          <li><a class="btn-floating blue" href="{{pathFor 'signInUp'}}" title="{{_ "sign_in_up"}}">
+            <i class="material-icons">perm_identity</i>
+          </a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</template>
